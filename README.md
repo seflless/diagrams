@@ -28,7 +28,7 @@ Diagram(
 ```
   3. ...then your ```example.svg``` should look like this:
  
-  <img src="https://camo.githubusercontent.com/cec8667e8bd7954c74df19b71231524c8660199b/687474703a2f2f6672616e636f69736c6162657267652e636f6d2f6469616772616d732f646f63732f6578616d706c652e737667">
+  <img src="http://francoislaberge.github.io/diagrams/docs/example.svg">
 
 # Tips & Tricks
 ## Embedding SVGs into Github Markdown
