@@ -1,4 +1,7 @@
 # Overview
+The goal of this project is to enable easily generating static SVG and images for useful diagrams related to documenting/explaining complex systems.
+
+**It's a work in progress.** See [TODO.md](https://github.com/francoislaberge/diagrams/blob/master/TODO.md).
 
 # Installation
 
