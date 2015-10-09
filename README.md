@@ -37,3 +37,7 @@ If you host your SVG file somewhere like using Github Pages, you can embed svg d
 ```
 <img src="http://francoislaberge.github.io/diagrams/docs/example.svg">
 ```
+
+## Credits
+
+  - [railroad-diagrams](github.com/tabatkins/railroad-diagrams) for the heavy lifting generating railroad diagrams
