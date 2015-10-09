@@ -11,6 +11,11 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
     - [Wikipedia Definition](https://en.wikipedia.org/wiki/Flowchart)
     - Prio art
       - [flowchart.js](http://adrai.github.io/flowchart.js/)
+        - - Uses Raphael...
+   - Add Dependencies Diagram Support?
+     - Prio art
+       - http://blakehaswell.com/post/85244164767/visualise-your-javascript-dependency-graph-using
+  - [cytoscape](https://www.npmjs.com/package/cytoscape) looks great in general.
 
   - Expose and document non cli way of generating the diagrams
   - Consider standardizing the input text formats for all diagram types(debatable as custom syntaxes are nice, albeit messier to manipulate/generate procedurally)
