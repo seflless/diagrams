@@ -29,6 +29,11 @@ Diagram(
   3. ...then your ```example.svg``` should look like this:
 
   <img src="http://francoislaberge.github.io/diagrams/docs/example.svg">
+  4. For more Documentation see [railroad-diagrams](http://npmjs.org/railroad-diagrams)'s documentation':
+    - **NOTE:** There is no real documentation for the input file syntax (PRs welcome), but the examples
+      should help you figure it out a bit
+    - [Examples](http://www.xanthir.com/etc/railroad-diagrams/example.html)
+    - [Online Generator](http://www.xanthir.com/etc/railroad-diagrams/generator.html)
 
 
 ## Tips & Tricks
