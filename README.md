@@ -17,13 +17,18 @@ npm install -g diagrams
   2. If your inputTextFile's content was this:
 ```bash
 Diagram(
-Optional('+', 'skip'),
-  Choice(0,
-    NonTerminal('name-start char'),
-    NonTerminal('escape')),
-    ZeroOrMore(
-      Choice(0,
-        NonTerminal('name char'),
-        NonTerminal('escape'))))
+  Optional('+', 'skip'),
+    Choice(0,
+      NonTerminal('name-start char'),
+      NonTerminal('escape')),
+      ZeroOrMore(
+        Choice(0,
+          NonTerminal('name char'),
+          NonTerminal('escape'))))
 ```
-  3. ...then your output should look like this:
+  3. ...then your ```example.svg``` should look like this:
+  ![Alt text](http://francoislaberge.com/diagrams/docs/example.svg)
+  <img src="http://francoislaberge.com/diagrams/docs/example.svg">
+
+# Tips & Tricks
+## Embedding SVGs into Github Markdown
