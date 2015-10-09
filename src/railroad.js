@@ -24,37 +24,41 @@ module.exports = function railroad(inputContent){
         // A few touchups
             // Embed styles
             // TODO: Make this customizable
-        svgText = svgText.replace(/(<svg class="railroad-diagram" width="\d+" height="\d+" viewBox="\d+ \d+ \d+ \d+")>/,'$1> \n'+
-            '\t<defs>\n'+
-                '\t\t<style type="text/css"><![CDATA[\n'+
-                    '\t\t\tsvg.railroad-diagram {\n'+
-                        '\t\t\t\tbackground-color: hsl(30,20%,95%);\n'+
-                    '\t\t\t}\n'+
-                    '\t\t\tsvg.railroad-diagram path {\n'+
-                        '\t\t\t\tstroke-width: 3;\n'+
-                        '\t\t\t\tstroke: black;\n'+
-                        '\t\t\t\tfill: rgba(0,0,0,0);\n'+
-                    '\t\t\t}\n'+
-                    '\t\t\tsvg.railroad-diagram text {\n'+
-                        '\t\t\t\tfont: bold 14px monospace;\n'+
-                        '\t\t\t\ttext-anchor: middle;\n'+
-                    '\t\t\t}\n'+
-                    '\t\t\tsvg.railroad-diagram text.label {\n'+
-                        '\t\t\t\ttext-anchor: start;\n'+
-                    '\t\t\t}\n'+
-                    '\t\t\tsvg.railroad-diagram text.comment {\n'+
-                        '\t\t\t\tfont: italic 12px monospace;\n'+
-                    '\t\t\t}\n'+
-                    '\t\t\tsvg.railroad-diagram g.non-terminal text {\n'+
-                        '\t\t\t\t/*font-style: italic;*/\n'+
-                    '\t\t\t}\n'+
-                    '\t\t\tsvg.railroad-diagram rect {\n'+
-                        '\t\t\t\tstroke-width: 3;\n'+
-                        '\t\t\t\tstroke: black;\n'+
-                        '\t\t\t\tfill: hsl(120,100%,90%);\n'+
-                    '\t\t\t}\n'+
-                '\t\t]]></style>\n'+
-            '\t</defs>'
+            // Trick I used babeljs.io to generate this multi-line string:
+        /*
+        ```
+        	<defs>
+        		<style type="text/css"><![CDATA[
+        			svg.railroad-diagram {
+                        stroke: rgba(0, 122, 209, 0.95);
+        			}
+        			svg.railroad-diagram path {
+        				stroke-width: 2;
+        				stroke: rgba(0, 122, 209, 0.95);
+        				fill: rgba(0,0,0,0);
+        			}
+        			svg.railroad-diagram text {
+        				font: 14px monospace;
+        				text-anchor: middle;
+                        stroke: black;
+        			}
+        			svg.railroad-diagram text.label {
+        				text-anchor: start;
+        			}
+        			svg.railroad-diagram text.comment {
+        				font: italic 12px monospace;
+        			}
+        			svg.railroad-diagram rect {
+        				stroke-width: 2;
+        				stroke: rgba(0, 122, 209, 0.95);
+        				fill: rgba(0,0,0,0);
+        			}
+        		]]></style>
+        	</defs>
+        ```
+        */
+        svgText = svgText.replace(/(<svg class="railroad-diagram" width="\d+" height="\d+" viewBox="\d+ \d+ \d+ \d+")>/,"$1> "+
+            "\n\t<defs>\n\t\t<style type=\"text/css\"><![CDATA[\n\t\t\tsvg.railroad-diagram {\n                stroke: rgba(0, 122, 209, 0.95);\n\t\t\t}\n\t\t\tsvg.railroad-diagram path {\n\t\t\t\tstroke-width: 2;\n\t\t\t\tstroke: rgba(0, 122, 209, 0.95);\n\t\t\t\tfill: rgba(0,0,0,0);\n\t\t\t}\n\t\t\tsvg.railroad-diagram text {\n\t\t\t\tfont: 14px monospace;\n\t\t\t\ttext-anchor: middle;\n                stroke: black;\n\t\t\t}\n\t\t\tsvg.railroad-diagram text.label {\n\t\t\t\ttext-anchor: start;\n\t\t\t}\n\t\t\tsvg.railroad-diagram text.comment {\n\t\t\t\tfont: italic 12px monospace;\n\t\t\t}\n\t\t\tsvg.railroad-diagram rect {\n\t\t\t\tstroke-width: 2;\n\t\t\t\tstroke: rgba(0, 122, 209, 0.95);\n\t\t\t\tfill: rgba(0,0,0,0);\n\t\t\t}\n\t\t]]></style>\n\t</defs>\n"
         );
             // The SVG doesn't render correctly in chrome unless this is added to the text that railroad-diagrams spits out
         svgText = svgText.replace(/<svg /, '<svg xmlns="http://www.w3.org/2000/svg" ');

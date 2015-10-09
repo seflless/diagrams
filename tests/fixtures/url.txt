@@ -1,0 +1,19 @@
+Diagram(
+	Choice(0, 'u', 'U'),
+	Choice(0, 'r', 'R'),
+	Choice(0, 'l', 'L'),
+	'(',
+	Choice(1,
+		Optional(NonTerminal('WS')),
+		Sequence(
+			Optional(NonTerminal('WS')),
+			NonTerminal('STRING'),
+			Optional(NonTerminal('WS'))),
+		Sequence(
+			Optional(NonTerminal('WS')),
+			OneOrMore(
+				Choice(0,
+					NonTerminal('not " \' ( ) WS or NPC'),
+					NonTerminal('escape'))),
+			Optional(NonTerminal('WS')))),
+	')')

@@ -22,12 +22,12 @@ if(process.argv[3]){
 } else {
     outputSVGFilePath = inputFilePath + ".svg";
 }
-
+console.log('hello');
 var inputContent = fs.readFileSync(inputFilePath, 'utf8');
 try {
     var outputContent = railroad(inputContent);
     fs.writeFileSync(outputSVGFilePath, outputContent);
 } catch(error){
-    console.error(error);
+    console.log(error);
     process.exit(1);
 }
