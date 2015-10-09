@@ -1,6 +1,6 @@
 {
   "name": "diagrams",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Generate Flowcharts, Network Sequence Diagrams, and Railroad Diagrams",
   "main": "src/diagrams.js",
   "bin": {
