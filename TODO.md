@@ -18,7 +18,7 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
      - Prio art
        - http://blakehaswell.com/post/85244164767/visualise-your-javascript-dependency-graph-using
   - [cytoscape](https://www.npmjs.com/package/cytoscape) looks great in general.
-
+  - Steal designs from the best. I love the look of [Omnigraffle](https://www.omnigroup.com/omnigraffle) when I used it. What's better?
   - Expose and document non cli way of generating the diagrams
   - Consider standardizing the input text formats for all diagram types(debatable as custom syntaxes are nice, albeit messier to manipulate/generate procedurally)
   - Consider adding file extensions for each that match their sub command
