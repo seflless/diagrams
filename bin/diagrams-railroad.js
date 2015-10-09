@@ -22,7 +22,7 @@ if(process.argv[3]){
 } else {
     outputSVGFilePath = inputFilePath + ".svg";
 }
-console.log('hello');
+
 var inputContent = fs.readFileSync(inputFilePath, 'utf8');
 try {
     var outputContent = railroad(inputContent);
