@@ -40,4 +40,4 @@ If you host your SVG file somewhere like using Github Pages, you can embed svg d
 
 ## Credits
 
-  - [railroad-diagrams](github.com/tabatkins/railroad-diagrams) for the heavy lifting generating railroad diagrams
+  - [railroad-diagrams](https://npmjs.org/railroad-diagrams) for the heavy lifting generating railroad diagrams
