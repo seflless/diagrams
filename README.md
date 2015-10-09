@@ -20,20 +20,21 @@ npm install -g diagrams
           diagrams railroad inputTextFile example.svg
 
   2. If your inputTextFile's content was this:
-```bash
-Diagram(
-  Optional('+', 'skip'),
-    Choice(0,
-      NonTerminal('name-start char'),
-      NonTerminal('escape')),
-      ZeroOrMore(
-        Choice(0,
-          NonTerminal('name char'),
-          NonTerminal('escape'))))
-```
+
+          Diagram(
+            Optional('+', 'skip'),
+              Choice(0,
+                NonTerminal('name-start char'),
+                NonTerminal('escape')),
+                ZeroOrMore(
+                  Choice(0,
+                    NonTerminal('name char'),
+                    NonTerminal('escape'))))
+
   3. ...then your ```example.svg``` should look like this:
 
   <img src="http://francoislaberge.github.io/diagrams/docs/example.svg">
+  
   4. For more Documentation see [railroad-diagrams](http://npmjs.org/railroad-diagrams)'s documentation':
     - **NOTE:** There is no real documentation for the input file syntax (PRs welcome), but the examples
       should help you figure it out a bit
