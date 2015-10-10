@@ -2,6 +2,9 @@
   "name": "diagrams",
   "version": "0.2.7",
   "description": "Generate Flowcharts, Network Sequence Diagrams, and Railroad Diagrams",
+  "engines": {
+    "node": "~v0.4.12"
+  },
   "main": "src/diagrams.js",
   "bin": {
     "diagrams": "./bin/diagrams.js"
@@ -10,8 +13,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "commander": "^2.8.1",
-    "railroad-diagrams": "^1.0.0"
+    "commander": "2.8.1",
+    "railroad-diagrams": "1.0.0",
+    "jsdom": "6.0.1"
   },
   "repository": {
     "type": "git",

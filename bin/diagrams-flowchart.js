@@ -3,7 +3,7 @@
 var program = require('commander'),
     inputFilePath,
     outputSVGFilePath,
-    railroad = require('../src/railroad/railroad'),
+    flowchart = require('../src/flowchart/flowchart'),
     fs = require('fs');
 
 program
@@ -25,8 +25,15 @@ if(process.argv[3]){
 
 var inputContent = fs.readFileSync(inputFilePath, 'utf8');
 try {
-    var outputContent = railroad(inputContent);
-    fs.writeFileSync(outputSVGFilePath, outputContent);
+    flowchart(inputContent, function(err, outputContent){
+        if(err){
+            console.error(err);
+            return;
+        }
+        console.log(outputContent);
+        fs.writeFileSync(outputSVGFilePath, outputContent);
+    });
+
 } catch(error){
     console.log(error);
     process.exit(1);
