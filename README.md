@@ -7,11 +7,9 @@ My current use case is for embedding these images into Github Markdown based doc
 
 # Installation
 
-  - [Node version 4.1.2+](https://nodejs.org/en/download/) is required. (We use of jsdom which as of jsdom@4.0.0 requires node@4.0.0+. See [Why?](https://github.com/tmpvar/jsdom/blob/b2e3a494b0e6a75b1caea32a17f41fc7d4799321/README.md#install)) 
-  - Run:
-
-        npm install -g diagrams
-
+```bash
+npm install -g diagrams
+```
 
 # Usage
 
