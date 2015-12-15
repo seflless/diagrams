@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "commander": "2.8.1",
+    "phantomjs2": "^2.0.2",
     "railroad-diagrams": "1.0.0"
   },
   "repository": {

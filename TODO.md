@@ -8,12 +8,18 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
         - Uses Raphael...
       - [grunt-websequencediagrams](https://www.npmjs.com/package/grunt-websequencediagrams)
         - Depends on online service
+  - Add graphviz functionality
+    - Create a graphviz-prebuilt or dot-prebuilt and go from there
   - Add Flowchart Support
     - [Wikipedia Definition](https://en.wikipedia.org/wiki/Flowchart)
     - Prio art
       - [flowchart.js](http://adrai.github.io/flowchart.js/)
         - - Uses Raphael...
       - Support compound states, [as in this demo?](http://js.cytoscape.org/demos/5b192c88616af2f75344/)
+   - Generalized D3
+     - Example: https://github.com/gregjopa/d3-server-side-demo
+     - TODO: Find articles
+     - Have system for running arbitrary code?
    - BNF, EBNF, and/or ABNF?
      - https://github.com/hildjj/node-abnf
    - Add Dependencies Diagram Support?
