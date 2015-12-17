@@ -10,6 +10,8 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
         - Depends on online service
   - Add graphviz functionality
     - Create a graphviz-prebuilt or dot-prebuilt and go from there
+  - A timeline labeling
+    - https://twitter.github.io/labella.js/
   - Add Flowchart Support
     - [Wikipedia Definition](https://en.wikipedia.org/wiki/Flowchart)
     - Prio art
