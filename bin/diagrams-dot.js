@@ -3,9 +3,8 @@
 var program = require('commander'),
     inputFilePath,
     outputSVGFilePath,
-    flowchart = require('../src/flowchart/flowchart'),
+    dot = require('../src/dot/dot'),
     fs = require('fs');
-
 program
     .parse(process.argv);
 
@@ -25,15 +24,8 @@ if(process.argv[3]){
 
 var inputContent = fs.readFileSync(inputFilePath, 'utf8');
 try {
-    flowchart(inputContent, function(err, outputContent){
-        if(err){
-            console.error(err);
-            return;
-        }
-        console.log(outputContent);
-        fs.writeFileSync(outputSVGFilePath, outputContent);
-    });
-
+    var outputContent = dot(inputContent);
+    fs.writeFileSync(outputSVGFilePath, outputContent);
 } catch(error){
     console.log(error);
     process.exit(1);

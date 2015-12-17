@@ -10,6 +10,9 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
         - Depends on online service
   - Add graphviz functionality
     - Create a graphviz-prebuilt or dot-prebuilt and go from there
+    - Alternative Approach
+      - https://github.com/mdaines/viz.js/
+
   - A timeline labeling
     - https://twitter.github.io/labella.js/
   - Add Flowchart Support
@@ -40,6 +43,8 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
     - Drop shadows?
     - Gradients?
     - Steal designs from the best. I love the look of [Omnigraffle](https://www.omnigroup.com/omnigraffle) when I used it. What's better?
+  - Make an atom plugin
+    - support svg too for convenience
 
 ## Extend Project Goals and Philosophies
 Creating yet another visualization lib seems cliche, personally I feel like there are some very technical impressive libs out there but I'd like to create a well documented alternative with a strict focus on statically generated diagrams that are very consistently designed and easy to embed in documentation and should be mobile/responsive first. It's to be seen if I can improve on the status quo.

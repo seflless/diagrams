@@ -17,7 +17,7 @@ npm install -g diagrams
 
   1. Run the following command from your terminal
 
-          diagrams railroad inputTextFile example.svg
+          diagrams railroad input.railroad railroad.svg
 
   2. If your inputTextFile's content was this:
 
@@ -31,9 +31,9 @@ npm install -g diagrams
                     NonTerminal('name char'),
                     NonTerminal('escape'))))
 
-  3. ...then your ```example.svg``` should look like this:
+  3. ...then your ```output.svg``` should look like this:
 
-  <img src="http://francoislaberge.github.io/diagrams/docs/example.svg">
+  <img src="http://francoislaberge.github.io/diagrams/docs/railroad.svg">
 
   4. For more Documentation see [railroad-diagrams](http://npmjs.org/railroad-diagrams)'s documentation':
     - **NOTE:** There is no real documentation for the input file syntax (PRs welcome), but the examples
@@ -41,6 +41,30 @@ npm install -g diagrams
     - [Examples](http://www.xanthir.com/etc/railroad-diagrams/example.html)
     - [Online Generator](http://www.xanthir.com/etc/railroad-diagrams/generator.html)
 
+## Dot Diagrams
+
+  1. Run the following command from your terminal
+
+        diagrams dot input.dot dot.svg
+
+  2. If your inputTextFile's content was this:
+
+            digraph G {
+                main -> parse -> execute;
+                main -> init;
+                main -> cleanup;
+                execute -> make_string;
+                execute -> printf
+                init -> make_string;
+                main -> printf;
+                execute -> compare;
+            }
+
+  3. ...then your ```dot.svg``` should look like this:
+
+  <img src="http://francoislaberge.github.io/diagrams/docs/dot.svg">
+
+  4. For more documentation on the dot file format read [dotguide.pdf](http://www.graphviz.org/pdf/dotguide.pdf).
 
 ## Tips & Tricks
 #### Embedding SVGs into Github Markdown
