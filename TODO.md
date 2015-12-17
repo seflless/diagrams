@@ -1,6 +1,15 @@
 # TODO
 Just railroad diagrams are supported currently. More coming soon. The goal is to have a consistent look for all of the diagrams and make a good suite of diagramming tool for improved documentation.
 
+  - High level Goals
+    - Create a rich suite of diagram generators
+    - Be able to generate .svg, .png, .pdf (in that order)
+    - Be designed to easily make a command line tool, a node.js module, a browser module, and an atom plugin
+    - Make it very consistent
+      - Make it so you can have styling that you provide to each generator to create simular styled graphs
+      - Make it so that sub command/function is also the file extension for source files (helpful in atom and in general)
+      - If possible make documentation consistent
+        - For example extra graphviz's [pdf](http://www.graphviz.org/pdf/dotguide.pdf) (see the bottom for visual tables that are great)
   - Add Sequence Diagrams
     - [Wikipedia Definition](https://en.wikipedia.org/wiki/Sequence_diagram)
     - Prio art
@@ -9,9 +18,18 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
       - [grunt-websequencediagrams](https://www.npmjs.com/package/grunt-websequencediagrams)
         - Depends on online service
   - Add graphviz functionality
+    - [See Gallery](http://www.graphviz.org/Gallery.php)
     - Create a graphviz-prebuilt or dot-prebuilt and go from there
     - Alternative Approach
       - https://github.com/mdaines/viz.js/
+    - dot: filter for drawing directed graphs ([Docs](http://www.graphviz.org/pdf/dotguide.pdf))
+      - started
+    - add more layout engines
+      - circo: filter for circular layout of graphs ([Docs](http://www.graphviz.org/pdf/circo.1.pdf))
+      - fdp: filter for drawing undirected graphs ([Docs](http://www.graphviz.org/pdf/fdp.1.pdf))
+      - neato: filter for drawing undirected graphs ([Docs](http://www.graphviz.org/pdf/neatoguide.pdf))
+      - osage: filter for array-based layouts ([Docs](http://www.graphviz.org/pdf/osage.1.pdf))
+      - twopi: filter for radial layouts of graphs ([Docs](http://www.graphviz.org/pdf/twopi.1.pdf))
 
   - A timeline labeling
     - https://twitter.github.io/labella.js/
