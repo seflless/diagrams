@@ -10,6 +10,7 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
       - Make it so that sub command/function is also the file extension for source files (helpful in atom and in general)
       - If possible make documentation consistent
         - For example extra graphviz's [pdf](http://www.graphviz.org/pdf/dotguide.pdf) (see the bottom for visual tables that are great)
+        - Or [man dot](http://www.graphviz.org/cgi-bin/man?dot)
   - Add Sequence Diagrams
     - [Wikipedia Definition](https://en.wikipedia.org/wiki/Sequence_diagram)
     - Prio art
