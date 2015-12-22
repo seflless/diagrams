@@ -21,6 +21,12 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
   - Add graphviz functionality
     - [See Gallery](http://www.graphviz.org/Gallery.php)
     - Create a graphviz-prebuilt or dot-prebuilt and go from there
+    - Docs
+      - [Dot Language](http://www.graphviz.org/content/dot-language)
+      - [Node Shapes](http://www.graphviz.org/content/node-shapes)
+      - [Node, Edge, and Graph Attributes](http://www.graphviz.org/content/attrs)
+      - [Arrow Shapes](http://www.graphviz.org/content/arrow-shapes)
+      - [Colors](http://www.graphviz.org/content/color-names)
     - Alternative Approach
       - https://github.com/mdaines/viz.js/
     - dot: filter for drawing directed graphs ([Docs](http://www.graphviz.org/pdf/dotguide.pdf))
