@@ -2,7 +2,7 @@ var electron = require('electron-prebuilt'),
     proc = require('child_process'),
     path = require('path');
 
-function sequence(inputPath, outputPath, cb) {
+function flowchart(inputPath, outputPath, cb) {
     // Launch electron using our main.js
     var child = proc.spawn(electron, [
             path.resolve(__dirname, 'electron-main.js'),
@@ -21,9 +21,9 @@ function sequence(inputPath, outputPath, cb) {
 
 };
 
-module.exports = sequence;
+module.exports = flowchart;
 /*
-sequence('tests/fixtures/sequence/simple.sequence', 'sequence.svg', function(err){
+flowchart('tests/fixtures/flowchart/simple.flowchart', 'docs/flowchart.svg', function(err){
     if(err){
         console.error(err);
         return;

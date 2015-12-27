@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Flowchart - Diagrams</title>
+        <script src="../vendors/raphael.2.1.4-min.js"></script>
+    </head>
+    <body>
+        <div id="diagram"></div>
+        <script>
+          var ipcRenderer = require('electron').ipcRenderer,
+              fs = require('fs');
+
+          ipcRenderer.on('flowchart-render-start', function(event, options) {
+              // Load input contents
+              var inputContent = fs.readFileSync(options.inputPath, 'utf8');
+
+              // Generate SVG version of the flowchart
+              var flowchart = require('../vendors/flowchart.js');
+
+              var chart = flowchart.parse(inputContent);
+              chart.drawSVG('diagram');
+
+              // Write out the svg file
+              fs.writeFileSync(options.outputPath, document.getElementById('diagram').innerHTML);
+
+              ipcRenderer.send('flowchart-render-finished');
+          });
+        </script>
+    </body>
+</html>
