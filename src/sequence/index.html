@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sequence Diagrams</title>
+    <script src="../vendors/raphael-min.js"></script>
+    <script src="../vendors/underscore-min.js"></script>
+    <script src="../vendors/sequence-diagram-min.js"></script>
+</head>
+<body>
+    <div id="diagram"></div>
+    <script>
+      var ipcRenderer = require('electron').ipcRenderer,
+          fs = require('fs');
+
+      ipcRenderer.on('sequence-render-start', function(event, options) {
+          // Load input contents
+          var inputContent = fs.readFileSync(options.inputPath, 'utf8');
+
+          // Generate SVG version of sequence
+          var diagram = Diagram.parse(inputContent);
+          diagram.drawSVG("diagram", {theme: 'hand'});
+
+          // Write out the svg file
+          fs.writeFileSync(options.outputPath, document.getElementById('diagram').innerHTML);
+
+          ipcRenderer.send('sequence-render-finished');
+      });
+    </script>
+</body>
+</html>

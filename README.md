@@ -13,7 +13,7 @@ npm install -g diagrams
 
 # Usage
 
-## Railroad Diagrams
+## Railroad Diagrams (.railroad)
 
   1. Run the following command from your terminal
 
@@ -41,7 +41,7 @@ npm install -g diagrams
     - [Examples](http://www.xanthir.com/etc/railroad-diagrams/example.html)
     - [Online Generator](http://www.xanthir.com/etc/railroad-diagrams/generator.html)
 
-## Dot Diagrams
+## Dot Diagrams (.dot)
 
   1. Run the following command from your terminal
 
@@ -66,6 +66,25 @@ npm install -g diagrams
 
   4. For more documentation on the dot file format read [dotguide.pdf](http://www.graphviz.org/pdf/dotguide.pdf).
 
+## Network Sequence Diagrams (.sequence)
+
+  1. Run the following command from your terminal
+
+          diagrams sequence input.sequence sequence.svg
+
+  2. If your inputTextFile's content was this:
+
+          Alice->Bob: Hello Bob, how are you?
+          Note right of Bob: Bob thinks
+          Bob-->Alice: I am good thanks!
+
+  3. ...then your ```sequence.svg``` should look like this:
+
+    <img src="http://francoislaberge.github.io/diagrams/docs/sequence.svg">
+
+  4. See [documentation of the network sequence diagram syntax](https://bramp.github.io/js-sequence-diagrams/)
+
+
 ## Tips & Tricks
 #### Embedding SVGs into Github Markdown
 If you host your SVG file somewhere like using Github Pages, you can embed svg diagrams into your markdown files using the following style syntax:
@@ -76,3 +95,4 @@ If you host your SVG file somewhere like using Github Pages, you can embed svg d
 ## Credits
 
   - [railroad-diagrams](https://npmjs.org/railroad-diagrams) for the heavy lifting generating railroad diagrams
+  - TODO: Add graphviz, network sequence diagram, and etc credits.
