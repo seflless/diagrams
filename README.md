@@ -33,7 +33,7 @@ npm install -g diagrams
 
   3. ...then your ```output.svg``` should look like this:
 
-  <img src="http://francoislaberge.github.io/diagrams/docs/railroad.svg">
+  <img src="http://francoislaberge.github.io/diagrams/docs/railroad.png">
 
   4. For more Documentation see [railroad-diagrams](http://npmjs.org/railroad-diagrams)'s documentation':
     - **NOTE:** There is no real documentation for the input file syntax (PRs welcome), but the examples
@@ -62,7 +62,7 @@ npm install -g diagrams
 
   3. ...then your ```dot.svg``` should look like this:
 
-  <img src="http://francoislaberge.github.io/diagrams/docs/dot.svg">
+  <img src="http://francoislaberge.github.io/diagrams/docs/dot.png">
 
   4. For more documentation on the dot file format read [dotguide.pdf](http://www.graphviz.org/pdf/dotguide.pdf).
 
@@ -80,9 +80,9 @@ npm install -g diagrams
 
   3. ...then your ```sequence.svg``` should look like this:
 
-    <img src="http://francoislaberge.github.io/diagrams/docs/sequence.svg">
+    <img src="http://francoislaberge.github.io/diagrams/docs/sequence.png">
 
-  4. See [documentation of the network sequence diagram syntax](https://bramp.github.io/js-sequence-diagrams/)
+  4. Documentation: [Network Sequence Diagram Syntax ](https://bramp.github.io/js-sequence-diagrams/)
 
 
 ## Tips & Tricks
