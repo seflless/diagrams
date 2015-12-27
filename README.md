@@ -33,7 +33,7 @@ npm install -g diagrams
 
   3. ...then your ```output.svg``` should look like this:
 
-  <img src="http://francoislaberge.github.io/diagrams/docs/railroad.png"  width="50%" />
+  <img src="http://francoislaberge.github.io/diagrams/docs/railroad.png"  width="75%" />
 
   4. For more Documentation see [railroad-diagrams](http://npmjs.org/railroad-diagrams)'s documentation':
     - **NOTE:** There is no real documentation for the input file syntax (PRs welcome), but the examples
@@ -45,7 +45,7 @@ npm install -g diagrams
 
   1. Run the following command from your terminal
 
-        diagrams dot input.dot dot.svg
+          diagrams dot input.dot dot.svg
 
   2. If your inputTextFile's content was this:
 
@@ -62,7 +62,7 @@ npm install -g diagrams
 
   3. ...then your ```dot.svg``` should look like this:
 
-  <img src="http://francoislaberge.github.io/diagrams/docs/dot.png" width="50%" />
+  <img src="http://francoislaberge.github.io/diagrams/docs/dot.png" width="75%" />
 
   4. For more documentation on the dot file format read [dotguide.pdf](http://www.graphviz.org/pdf/dotguide.pdf).
 
@@ -80,7 +80,7 @@ npm install -g diagrams
 
   3. ...then your ```sequence.svg``` should look like this:
 
-  <img src="http://francoislaberge.github.io/diagrams/docs/sequence.png"  width="50%" />
+  <img src="http://francoislaberge.github.io/diagrams/docs/sequence.png" width="75%" />
 
   4. Documentation: [Network Sequence Diagram Syntax ](https://bramp.github.io/js-sequence-diagrams/)
 
@@ -108,10 +108,9 @@ npm install -g diagrams
           c2(yes)->io->e
           c2(no)->op2->e
 
-
   3. ...then your ```flowchart.svg``` should look like this:
 
-  <img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png"  width="50%" />
+  <img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png" width="75%" />
 
   4. Documentation: [Flowchart.js ](http://flowchart.js.org/)
 
