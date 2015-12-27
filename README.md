@@ -49,16 +49,16 @@ npm install -g diagrams
 
   2. If your inputTextFile's content was this:
 
-            digraph G {
-                main -> parse -> execute;
-                main -> init;
-                main -> cleanup;
-                execute -> make_string;
-                execute -> printf
-                init -> make_string;
-                main -> printf;
-                execute -> compare;
-            }
+          digraph G {
+              main -> parse -> execute;
+              main -> init;
+              main -> cleanup;
+              execute -> make_string;
+              execute -> printf
+              init -> make_string;
+              main -> printf;
+              execute -> compare;
+          }
 
   3. ...then your ```dot.svg``` should look like this:
 
@@ -80,7 +80,7 @@ npm install -g diagrams
 
   3. ...then your ```sequence.svg``` should look like this:
 
-    <img src="http://francoislaberge.github.io/diagrams/docs/sequence.png"  width="50%" />
+  <img src="http://francoislaberge.github.io/diagrams/docs/sequence.png"  width="50%" />
 
   4. Documentation: [Network Sequence Diagram Syntax ](https://bramp.github.io/js-sequence-diagrams/)
 
@@ -88,30 +88,30 @@ npm install -g diagrams
 
   1. Run the following command from your terminal
 
-        diagrams flowchart input.flowchart flowchart.svg
+          diagrams flowchart input.flowchart flowchart.svg
 
   2. If your inputTextFile's content was this:
 
-            st=>start: Start|past:>http://www.google.com[blank]
-            e=>end: Ende:>http://www.google.com
-            op1=>operation: My Operation|past
-            op2=>operation: Stuff|current
-            sub1=>subroutine: My Subroutine|invalid
-            cond=>condition: Yes
-            or No?|approved:>http://www.google.com
-            c2=>condition: Good idea|rejected
-            io=>inputoutput: catch something...|request
+          st=>start: Start|past:>http://www.google.com[blank]
+          e=>end: Ende:>http://www.google.com
+          op1=>operation: My Operation|past
+          op2=>operation: Stuff|current
+          sub1=>subroutine: My Subroutine|invalid
+          cond=>condition: Yes
+          or No?|approved:>http://www.google.com
+          c2=>condition: Good idea|rejected
+          io=>inputoutput: catch something...|request
 
-            st->op1(right)->cond
-            cond(yes, right)->c2
-            cond(no)->sub1(left)->op1
-            c2(yes)->io->e
-            c2(no)->op2->e
+          st->op1(right)->cond
+          cond(yes, right)->c2
+          cond(no)->sub1(left)->op1
+          c2(yes)->io->e
+          c2(no)->op2->e
 
 
   3. ...then your ```flowchart.svg``` should look like this:
 
-    <img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png"  width="50%" />
+  <img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png"  width="50%" />
 
   4. Documentation: [Flowchart.js ](http://flowchart.js.org/)
 
