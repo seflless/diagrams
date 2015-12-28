@@ -1,9 +1,13 @@
 # Overview
-**It's a work in progress.** See [TODO.md](https://github.com/francoislaberge/diagrams/blob/master/TODO.md).
+A suite of text DSLs for generating various types of diagrams. Currently supported are railroad, flowchart, graphviz's dot format, and network sequence diagrams.
 
-The goal of this project is to enable easily generating static SVG and images for useful diagrams related to documenting/explaining complex systems.
+<img src="http://francoislaberge.github.io/diagrams/docs/railroad.png"  width="25%" style="float: left;" />
 
-My current use case is for embedding these images into Github Markdown based documents.
+<img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png"  width="25%" style="float: left;"/>
+
+<img src="http://francoislaberge.github.io/diagrams/docs/dot.png"  width="25%" style="float: left;"/>
+
+<img src="http://francoislaberge.github.io/diagrams/docs/sequence.png"  width="25%" style="float: left;"/>
 
 # Installation
 
@@ -114,16 +118,9 @@ npm install -g diagrams
 
   4. Documentation: [Flowchart.js ](http://flowchart.js.org/)
 
-
-
-## Tips & Tricks
-#### Embedding SVGs into Github Markdown
-If you host your SVG file somewhere like using Github Pages, you can embed svg diagrams into your markdown files using the following style syntax:
-```
-<img src="http://francoislaberge.github.io/diagrams/docs/example.svg">
-```
-
 ## Credits
 
   - [railroad-diagrams](https://npmjs.org/railroad-diagrams) for the heavy lifting generating railroad diagrams
   - TODO: Add graphviz, network sequence diagram, and etc credits.
+
+**It's a work in progress.** See [TODO.md](https://github.com/francoislaberge/diagrams/blob/master/TODO.md).
