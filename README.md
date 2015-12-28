@@ -20,7 +20,8 @@ npm install -g diagrams
 
 # Usage
 
-## Flowchart Diagrams (.flowchart)
+## flowchart
+To generate flowcharts:
 
   1. Run the following command from your terminal
 
@@ -50,7 +51,8 @@ npm install -g diagrams
 
   4. Documentation: [Flowchart.js ](http://flowchart.js.org/)
 
-## Network Sequence Diagrams (.sequence)
+## sequence
+To generate Network Sequence Diagrams:
 
   1. Run the following command from your terminal
 
@@ -68,7 +70,8 @@ npm install -g diagrams
 
   4. Documentation: [Network Sequence Diagram Syntax ](https://bramp.github.io/js-sequence-diagrams/)
 
-## Dot Diagrams (.dot)
+## dot
+To generate diagrams from Graphviz's .dot file format:
 
   1. Run the following command from your terminal
 
@@ -93,7 +96,8 @@ npm install -g diagrams
 
   4. For more documentation on the dot file format read [dotguide.pdf](http://www.graphviz.org/pdf/dotguide.pdf).
 
-## Railroad Diagrams (.railroad)
+## railroad
+To generate Railroad Diagrams:
 
   1. Run the following command from your terminal
 
