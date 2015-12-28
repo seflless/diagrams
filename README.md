@@ -130,4 +130,5 @@ To generate Railroad Diagrams:
   - [railroad-diagrams](https://npmjs.org/railroad-diagrams) for the railroad diagrams
   - [electron](http://electron.atom.io/) for headless browsing to wrap above libraries that don't work without a browser environment
 
-**It's a work in progress.** See [TODO.md](https://github.com/francoislaberge/diagrams/blob/master/TODO.md).
+## TODOs
+It's a work in progress. See [TODO.md](https://github.com/francoislaberge/diagrams/blob/master/TODO.md).
