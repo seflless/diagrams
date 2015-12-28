@@ -89,7 +89,9 @@ To generate diagrams from Graphviz's .dot file format:
 
   <img src="http://francoislaberge.github.io/diagrams/docs/dot.png" width="300px" />
 
-  4. For more documentation on the dot file format read [dotguide.pdf](http://www.graphviz.org/pdf/dotguide.pdf).
+  4. For more documentation on the dot file format:
+    - Read [dotguide.pdf](http://www.graphviz.org/pdf/dotguide.pdf).
+    - See the [online generator](http://mdaines.github.io/viz.js/).
 
 ## railroad
 To generate Railroad Diagrams:
