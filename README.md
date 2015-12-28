@@ -1,16 +1,11 @@
 # Overview
-A suite of text DSLs for generating various types of diagrams. Currently supported are flowcharts, graphviz's dot, network sequence, and railroad diagrams.
+A suite of text DSLs for generating various types of diagrams. Currently supported are:
+  - [flowchart](#flowchart)
+  - [graphviz's dot](#dot)
+  - [network sequence](#sequence)
+  - [railroad diagrams](#railroad)
 
-<table>
-  <tr>
-    <td><img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png" width="350px" height="300px"/></td>
-    <td><img src="http://francoislaberge.github.io/diagrams/docs/sequence.png" width="350px" height="300px"/></td>
-  </tr>
-  <tr>
-    <td><img src="http://francoislaberge.github.io/diagrams/docs/dot.png" width="350px" height="300px"/></td>
-    <td><img src="http://francoislaberge.github.io/diagrams/docs/railroad.png" width="350px" height="100px"/></td>
-  </tr>
-</table>
+<img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/sequence.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/dot.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/railroad.png" width="25%"/>
 
 # Installation
 
