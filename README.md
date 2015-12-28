@@ -5,7 +5,7 @@ A suite of text DSLs for generating various types of diagrams. Currently support
   - [network sequence](#sequence)
   - [railroad diagrams](#railroad)
 
-<img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png" style="border: thin solid grey; padding-right: 5px;" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/sequence.png"  style="border: thin solid grey; padding-right: 5px;" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/dot.png"  style="border: thin solid grey; padding-right: 5px;" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/railroad.png"  style="border: thin solid grey; padding-right: 5px;" width="25%"/>
+<img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/sequence.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/dot.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/railroad.png" width="25%"/>
 
 # Installation
 
