@@ -3,12 +3,12 @@ A suite of text DSLs for generating various types of diagrams. Currently support
 
 <table>
   <tr>
-    <td><img src="http://francoislaberge.github.io/diagrams/docs/railroad.png"  width="25%" /></td>
-    <td><img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png"  width="25%" /></td>
+    <td><img src="http://francoislaberge.github.io/diagrams/docs/railroad.png"/></td>
+    <td><img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png"/></td>
   </tr>
   <tr>
-    <td><img src="http://francoislaberge.github.io/diagrams/docs/dot.png"  width="25%" /></td>
-    <td><img src="http://francoislaberge.github.io/diagrams/docs/sequence.png"  width="25%" /></td>
+    <td><img src="http://francoislaberge.github.io/diagrams/docs/dot.png"/></td>
+    <td><img src="http://francoislaberge.github.io/diagrams/docs/sequence.png"/></td>
   </tr>
 </table>
 
