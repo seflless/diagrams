@@ -4,13 +4,14 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
   - High level Goals
     - Create a rich suite of diagram generators
     - Be able to generate .svg, .png, .pdf (in that order)
-    - Be designed to easily make a command line tool, a node.js module, a browser module, and an atom plugin
+    - Be designed to easily make a command line tool, a node.js module, a browser module, and online converter, and an atom plugin
     - Make it very consistent
       - Make it so you can have styling that you provide to each generator to create simular styled graphs
       - Make it so that sub command/function is also the file extension for source files (helpful in atom and in general)
       - If possible make documentation consistent
         - For example extra graphviz's [pdf](http://www.graphviz.org/pdf/dotguide.pdf) (see the bottom for visual tables that are great)
         - Or [man dot](http://www.graphviz.org/cgi-bin/man?dot)
+    - TODO: Write an article explaining all the point points I've faced which would go away if people only outputted SVG that could then be turned into content or converted to an image.
   - Add Sequence Diagrams
     - [Wikipedia Definition](https://en.wikipedia.org/wiki/Sequence_diagram)
     - Prio art
