@@ -124,7 +124,10 @@ To generate Railroad Diagrams:
 
 ## Credits
 
-  - [railroad-diagrams](https://npmjs.org/railroad-diagrams) for the heavy lifting generating railroad diagrams
-  - TODO: Add graphviz, network sequence diagram, and etc credits.
+  - [flowchart.js](http://flowchart.js.org/) for the flowchart diagrams
+  - [js-sequence-diagrams](https://bramp.github.io/js-sequence-diagrams/) for the sequence diagrams
+  - [viz.js](https://github.com/mdaines/viz.js) for getting Graphviz compiled to js
+  - [railroad-diagrams](https://npmjs.org/railroad-diagrams) for the railroad diagrams
+  - [electron](http://electron.atom.io/) for headless browsing to wrap above libraries that don't work without a browser environment
 
 **It's a work in progress.** See [TODO.md](https://github.com/francoislaberge/diagrams/blob/master/TODO.md).
