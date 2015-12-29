@@ -12,13 +12,18 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
         - For example extra graphviz's [pdf](http://www.graphviz.org/pdf/dotguide.pdf) (see the bottom for visual tables that are great)
         - Or [man dot](http://www.graphviz.org/cgi-bin/man?dot)
     - TODO: Write an article explaining all the point points I've faced which would go away if people only outputted SVG that could then be turned into content or converted to an image.
-  - Add Sequence Diagrams
-    - [Wikipedia Definition](https://en.wikipedia.org/wiki/Sequence_diagram)
-    - Prio art
-      - [js-sequence-diagrams](https://github.com/winfinit/js-sequence-diagrams)
-        - Uses Raphael...
-      - [grunt-websequencediagrams](https://www.npmjs.com/package/grunt-websequencediagrams)
-        - Depends on online service
+  - prio art (Focus is on open source):
+    - Daegre Design Priorities:
+      - I like this one, it's renderer agnostic
+      - https://github.com/cpettitt/dagre/wiki#recommended-reading
+      - https://github.com/cpettitt/dagre/wiki#design-priorities
+      - See https://github.com/cpettitt/dagre/wiki#third-party-examples
+        - This one especially allows UML style from simple syntax layouts
+          - http://www.nomnoml.com/
+          - Click 'I'
+    - cytoscape
+      - http://js.cytoscape.org/
+
   - Add graphviz functionality
     - [See Gallery](http://www.graphviz.org/Gallery.php)
     - Create a graphviz-prebuilt or dot-prebuilt and go from there
