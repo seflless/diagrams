@@ -123,10 +123,10 @@ digraph G {
 
 ## railroad
 Documentation see [railroad-diagrams](http://npmjs.org/railroad-diagrams)'s documentation':
-    - **NOTE:** There is no real documentation for the input file syntax (PRs welcome), but the examples
+  - **NOTE:** There is no real documentation for the input file syntax (PRs welcome), but the examples
       should help you figure it out a bit
-    - [Examples](http://www.xanthir.com/etc/railroad-diagrams/example.html)
-    - [Online Generator](http://www.xanthir.com/etc/railroad-diagrams/generator.html)
+  - [Examples](http://www.xanthir.com/etc/railroad-diagrams/example.html)
+  - [Online Generator](http://www.xanthir.com/etc/railroad-diagrams/generator.html)
 
 To generate Railroad Diagrams, run:
         
