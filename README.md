@@ -1,8 +1,8 @@
 # Overview
 A suite of text DSLs for generating various types of diagrams. Currently supported are:
   - [flowchart](#flowchart)
-  - [graphviz's dot](#dot)
   - [network sequence](#sequence)
+  - [graphviz's dot](#dot)
   - [railroad diagrams](#railroad)
 
 <!--<img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/sequence.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/dot.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/railroad.png" width="25%"/>-->
