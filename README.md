@@ -20,25 +20,25 @@ To generate flowcharts:
 
   1. Run the following command from your terminal
 
-          diagrams flowchart input.flowchart flowchart.svg
+        diagrams flowchart input.flowchart flowchart.svg
 
   2. If your inputTextFile's content was this:
 
-          st=>start: Start|past:>http://www.google.com[blank]
-          e=>end: Ende:>http://www.google.com
-          op1=>operation: My Operation|past
-          op2=>operation: Stuff|current
-          sub1=>subroutine: My Subroutine|invalid
-          cond=>condition: Yes
-          or No?|approved:>http://www.google.com
-          c2=>condition: Good idea|rejected
-          io=>inputoutput: catch something...|request
+        st=>start: Start|past:>http://www.google.com[blank]
+        e=>end: Ende:>http://www.google.com
+        op1=>operation: My Operation|past
+        op2=>operation: Stuff|current
+        sub1=>subroutine: My Subroutine|invalid
+        cond=>condition: Yes
+        or No?|approved:>http://www.google.com
+        c2=>condition: Good idea|rejected
+        io=>inputoutput: catch something...|request
 
-          st->op1(right)->cond
-          cond(yes, right)->c2
-          cond(no)->sub1(left)->op1
-          c2(yes)->io->e
-          c2(no)->op2->e
+        st->op1(right)->cond
+        cond(yes, right)->c2
+        cond(no)->sub1(left)->op1
+        c2(yes)->io->e
+        c2(no)->op2->e
 
   3. ...then your ```flowchart.svg``` should look like this:
 
@@ -51,13 +51,13 @@ To generate Network Sequence Diagrams:
 
   1. Run the following command from your terminal
 
-          diagrams sequence input.sequence sequence.svg
+        diagrams sequence input.sequence sequence.svg
 
   2. If your inputTextFile's content was this:
 
-          Alice->Bob: Hello Bob, how are you?
-          Note right of Bob: Bob thinks
-          Bob-->Alice: I am good thanks!
+        Alice->Bob: Hello Bob, how are you?
+        Note right of Bob: Bob thinks
+        Bob-->Alice: I am good thanks!
 
   3. ...then your ```sequence.svg``` should look like this:
 
@@ -70,20 +70,20 @@ To generate diagrams from Graphviz's .dot file format:
 
   1. Run the following command from your terminal
 
-          diagrams dot input.dot dot.svg
+        diagrams dot input.dot dot.svg
 
   2. If your inputTextFile's content was this:
 
-          digraph G {
-              main -> parse -> execute;
-              main -> init;
-              main -> cleanup;
-              execute -> make_string;
-              execute -> printf
-              init -> make_string;
-              main -> printf;
-              execute -> compare;
-          }
+        digraph G {
+            main -> parse -> execute;
+            main -> init;
+            main -> cleanup;
+            execute -> make_string;
+            execute -> printf
+            init -> make_string;
+            main -> printf;
+            execute -> compare;
+        }
 
   3. ...then your ```dot.svg``` should look like this:
 
@@ -98,19 +98,19 @@ To generate Railroad Diagrams:
 
   1. Run the following command from your terminal
 
-          diagrams railroad input.railroad railroad.svg
+        diagrams railroad input.railroad railroad.svg
 
   2. If your inputTextFile's content was this:
 
-          Diagram(
-            Optional('+', 'skip'),
-              Choice(0,
-                NonTerminal('name-start char'),
-                NonTerminal('escape')),
-                ZeroOrMore(
-                  Choice(0,
-                    NonTerminal('name char'),
-                    NonTerminal('escape'))))
+        Diagram(
+          Optional('+', 'skip'),
+            Choice(0,
+              NonTerminal('name-start char'),
+              NonTerminal('escape')),
+              ZeroOrMore(
+                Choice(0,
+                  NonTerminal('name char'),
+                  NonTerminal('escape'))))
 
   3. ...then your ```output.svg``` should look like this:
 
