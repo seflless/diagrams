@@ -65,8 +65,8 @@ To generate Network Sequence Diagrams, run:
 
 <table>
 <tr>
-<td><strong>input.flowchart</strong></td>
-<td><strong>flowchart.svg</strong></td>
+<td><strong>input.sequence</strong></td>
+<td><strong>sequence.svg</strong></td>
 </tr>
 <tr>
   <td>
