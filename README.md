@@ -5,7 +5,7 @@ A suite of text DSLs for generating various types of diagrams. Currently support
   - [network sequence](#sequence)
   - [railroad diagrams](#railroad)
 
-<img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/sequence.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/dot.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/railroad.png" width="25%"/>
+<!--<img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/sequence.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/dot.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/docs/railroad.png" width="25%"/>-->
 
 # Installation
 
@@ -16,111 +16,148 @@ npm install -g diagrams
 # Usage
 
 ## flowchart
-To generate flowcharts:
+Documentation: [Flowchart.js ](http://flowchart.js.org/).
 
-  1. Run the following command from your terminal
+To generate flowcharts, run:
 
-        diagrams flowchart input.flowchart flowchart.svg
+    diagrams flowchart input.flowchart flowchart.svg
+    
+<table>
+<tr>
+<td><strong>input.flowchart</strong></td>
+<td><strong>flowchart.svg</strong></td>
+</tr>
+<tr>
+  <td>
+  <pre>
+<code>
+st=>start: Start|past:>http://www.google.com[blank]
+e=>end: Ende:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
 
-  2. If your inputTextFile's content was this:
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e
+</code>
+  </pre>
+  </td>
+  <td>
+    <img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png" width="600px" />
+  </td>
+</tr>
+</table>
 
-        st=>start: Start|past:>http://www.google.com[blank]
-        e=>end: Ende:>http://www.google.com
-        op1=>operation: My Operation|past
-        op2=>operation: Stuff|current
-        sub1=>subroutine: My Subroutine|invalid
-        cond=>condition: Yes
-        or No?|approved:>http://www.google.com
-        c2=>condition: Good idea|rejected
-        io=>inputoutput: catch something...|request
-
-        st->op1(right)->cond
-        cond(yes, right)->c2
-        cond(no)->sub1(left)->op1
-        c2(yes)->io->e
-        c2(no)->op2->e
-
-  3. ...then your ```flowchart.svg``` should look like this:
-
-  <img src="http://francoislaberge.github.io/diagrams/docs/flowchart.png" width="600px" />
-
-  4. Documentation: [Flowchart.js ](http://flowchart.js.org/)
 
 ## sequence
-To generate Network Sequence Diagrams:
+Documentation: [Network Sequence Diagram Syntax ](https://bramp.github.io/js-sequence-diagrams/).
 
-  1. Run the following command from your terminal
+To generate Network Sequence Diagrams, run:
 
-        diagrams sequence input.sequence sequence.svg
+    diagrams sequence input.sequence sequence.svg
 
-  2. If your inputTextFile's content was this:
-
-        Alice->Bob: Hello Bob, how are you?
-        Note right of Bob: Bob thinks
-        Bob-->Alice: I am good thanks!
-
-  3. ...then your ```sequence.svg``` should look like this:
-
-  <img src="http://francoislaberge.github.io/diagrams/docs/sequence.png" width="350px" />
-
-  4. Documentation: [Network Sequence Diagram Syntax ](https://bramp.github.io/js-sequence-diagrams/)
+<table>
+<tr>
+<td><strong>input.flowchart</strong></td>
+<td><strong>flowchart.svg</strong></td>
+</tr>
+<tr>
+  <td>
+  <pre>
+<code>
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+</code>
+  </pre>
+  </td>
+  <td>
+    <img src="http://francoislaberge.github.io/diagrams/docs/sequence.png" width="350px" />
+  </td>
+</tr>
+</table>
 
 ## dot
-To generate diagrams from Graphviz's .dot file format:
+Documentation on the dot file format:
+  - Read [dotguide.pdf](http://www.graphviz.org/pdf/dotguide.pdf).
+  - See the [online generator](http://mdaines.github.io/viz.js/).
 
-  1. Run the following command from your terminal
+To generate diagrams from Graphviz's .dot file format, run:
 
-        diagrams dot input.dot dot.svg
+    diagrams dot input.dot dot.svg
 
-  2. If your inputTextFile's content was this:
-
-        digraph G {
-            main -> parse -> execute;
-            main -> init;
-            main -> cleanup;
-            execute -> make_string;
-            execute -> printf
-            init -> make_string;
-            main -> printf;
-            execute -> compare;
-        }
-
-  3. ...then your ```dot.svg``` should look like this:
-
-  <img src="http://francoislaberge.github.io/diagrams/docs/dot.png" width="300px" />
-
-  4. For more documentation on the dot file format:
-    - Read [dotguide.pdf](http://www.graphviz.org/pdf/dotguide.pdf).
-    - See the [online generator](http://mdaines.github.io/viz.js/).
+<table>
+<tr>
+<td><strong>input.dot</strong></td>
+<td><strong>dot.svg</strong></td>
+</tr>
+<tr>
+  <td>
+  <pre>
+<code>
+digraph G {
+    main -> parse -> execute;
+    main -> init;
+    main -> cleanup;
+    execute -> make_string;
+    execute -> printf
+    init -> make_string;
+    main -> printf;
+    execute -> compare;
+}
+</code>
+  </pre>
+  </td>
+  <td>
+    <img src="http://francoislaberge.github.io/diagrams/docs/dot.png" width="300px" />
+  </td>
+</tr>
+</table>
 
 ## railroad
-To generate Railroad Diagrams:
-
-  1. Run the following command from your terminal
-
-        diagrams railroad input.railroad railroad.svg
-
-  2. If your inputTextFile's content was this:
-
-        Diagram(
-          Optional('+', 'skip'),
-            Choice(0,
-              NonTerminal('name-start char'),
-              NonTerminal('escape')),
-              ZeroOrMore(
-                Choice(0,
-                  NonTerminal('name char'),
-                  NonTerminal('escape'))))
-
-  3. ...then your ```output.svg``` should look like this:
-
-  <img src="http://francoislaberge.github.io/diagrams/docs/railroad.png"  width="400px" />
-
-  4. For more Documentation see [railroad-diagrams](http://npmjs.org/railroad-diagrams)'s documentation':
+Documentation see [railroad-diagrams](http://npmjs.org/railroad-diagrams)'s documentation':
     - **NOTE:** There is no real documentation for the input file syntax (PRs welcome), but the examples
       should help you figure it out a bit
     - [Examples](http://www.xanthir.com/etc/railroad-diagrams/example.html)
     - [Online Generator](http://www.xanthir.com/etc/railroad-diagrams/generator.html)
+
+To generate Railroad Diagrams, run:
+        
+    diagrams railroad input.railroad railroad.svg
+        
+<table>
+<tr>
+<td><strong>input.railroad</strong></td>
+<td><strong>railroad.svg</strong></td>
+</tr>
+<tr>
+  <td>
+  <pre>
+<code>
+Diagram(
+  Optional('+', 'skip'),
+    Choice(0,
+      NonTerminal('name-start char'),
+      NonTerminal('escape')),
+      ZeroOrMore(
+        Choice(0,
+          NonTerminal('name char'),
+          NonTerminal('escape'))))
+</code>
+  </pre>
+  </td>
+  <td>
+    <img src="http://francoislaberge.github.io/diagrams/docs/railroad.png"  width="400px" />
+  </td>
+</tr>
+</table>
 
 ## Credits
 
