@@ -21,8 +21,8 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
         - This one especially allows UML style from simple syntax layouts
           - http://www.nomnoml.com/
           - Click 'I'
-    - cytoscape
-      - http://js.cytoscape.org/
+      - cytoscape
+        - http://js.cytoscape.org/
   - Add graphviz functionality
     - [See Gallery](http://www.graphviz.org/Gallery.php)
     - Create a graphviz-prebuilt or dot-prebuilt and go from there
@@ -42,7 +42,6 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
       - neato: filter for drawing undirected graphs ([Docs](http://www.graphviz.org/pdf/neatoguide.pdf))
       - osage: filter for array-based layouts ([Docs](http://www.graphviz.org/pdf/osage.1.pdf))
       - twopi: filter for radial layouts of graphs ([Docs](http://www.graphviz.org/pdf/twopi.1.pdf))
-
   - A timeline labeling
     - https://twitter.github.io/labella.js/
   - Add Flowchart Support
