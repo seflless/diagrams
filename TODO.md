@@ -3,6 +3,7 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
 
   - High level Goals
     - Create a rich suite of diagram generators
+    - Should we add versioning?
     - Be able to generate .svg, .png, .pdf (in that order)
     - Be designed to easily make a command line tool, a node.js module, a browser module, and online converter, and an atom plugin
     - Make it very consistent
@@ -44,6 +45,9 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
       - twopi: filter for radial layouts of graphs ([Docs](http://www.graphviz.org/pdf/twopi.1.pdf))
   - A timeline labeling
     - https://twitter.github.io/labella.js/
+  - Add Dependency graph support
+    - Would be nice to see it in a stack format
+  - Add Orgchart support?
   - Add Flowchart Support
     - [Wikipedia Definition](https://en.wikipedia.org/wiki/Flowchart)
     - Prio art
