@@ -23,7 +23,6 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
           - Click 'I'
     - cytoscape
       - http://js.cytoscape.org/
-
   - Add graphviz functionality
     - [See Gallery](http://www.graphviz.org/Gallery.php)
     - Create a graphviz-prebuilt or dot-prebuilt and go from there
