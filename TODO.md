@@ -21,8 +21,8 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
         - This one especially allows UML style from simple syntax layouts
           - http://www.nomnoml.com/
           - Click 'I'
-      - cytoscape
-        - http://js.cytoscape.org/
+    - cytoscape
+      - http://js.cytoscape.org/
   - Add graphviz functionality
     - [See Gallery](http://www.graphviz.org/Gallery.php)
     - Create a graphviz-prebuilt or dot-prebuilt and go from there
