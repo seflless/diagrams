@@ -1,7 +1,7 @@
 # Overview
 Command line tool for generating a suite of various types of diagrams, each based on intuitive text DSLs.
 
-See below for an example of the syntax/output for the currently supported diagrams:
+See below for documentation/examples of the syntax/output for each of the currently supported diagrams type:
   - [flowchart](#flowchart)
   - [network sequence](#sequence)
   - [graphviz's dot](#dot)
