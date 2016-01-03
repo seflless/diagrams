@@ -19,6 +19,9 @@
     "type": "git",
     "url": "https://github.com/francoislaberge/diagrams"
   },
+  "bugs": {
+    "url": "https://github.com/francoislaberge/diagrams/issues"
+  },
   "author": "Francois Laberge <francoislaberge@gmail.com>",
   "license": "MIT",
   "keywords": [
