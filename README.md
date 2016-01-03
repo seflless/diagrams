@@ -1,5 +1,7 @@
 # Overview
-A suite of text DSLs for generating various types of diagrams. Currently supported are:
+Command line tool for generating a suite of various types of diagrams, each based on intuitive text DSLs.
+
+See below for an example of the syntax/output for the currently supported diagrams:
   - [flowchart](#flowchart)
   - [network sequence](#sequence)
   - [graphviz's dot](#dot)
@@ -21,7 +23,7 @@ Documentation: [Flowchart.js ](http://flowchart.js.org/).
 To generate flowcharts, run:
 
     diagrams flowchart input.flowchart flowchart.svg
-    
+
 <table>
 <tr>
 <td><strong>input.flowchart</strong></td>
@@ -129,9 +131,9 @@ Documentation see [railroad-diagrams](http://npmjs.org/railroad-diagrams)'s docu
   - [Online Generator](http://www.xanthir.com/etc/railroad-diagrams/generator.html)
 
 To generate Railroad Diagrams, run:
-        
+
     diagrams railroad input.railroad railroad.svg
-        
+
 <table>
 <tr>
 <td><strong>input.railroad</strong></td>
