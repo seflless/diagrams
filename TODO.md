@@ -1,6 +1,7 @@
 # TODO
 Just railroad diagrams are supported currently. More coming soon. The goal is to have a consistent look for all of the diagrams and make a good suite of diagramming tool for improved documentation.
 
+  - Add theming support
   - High level Goals
     - Create a rich suite of diagram generators
     - Should we add versioning?
