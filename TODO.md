@@ -1,6 +1,8 @@
 # TODO
 Just railroad diagrams are supported currently. More coming soon. The goal is to have a consistent look for all of the diagrams and make a good suite of diagramming tool for improved documentation.
 
+  - Bin packing?
+    - https://github.com/Jack000/SVGnest
   - Add theming support
   - High level Goals
     - Create a rich suite of diagram generators
