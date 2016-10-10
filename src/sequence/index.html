@@ -18,7 +18,7 @@
 
           // Generate SVG version of sequence
           var diagram = Diagram.parse(inputContent);
-          diagram.drawSVG("diagram", {theme: 'hand'});
+          diagram.drawSVG("diagram", {theme: 'simple'});
 
           // Write out the svg file
           fs.writeFileSync(options.outputPath, document.getElementById('diagram').innerHTML);
