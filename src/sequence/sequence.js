@@ -11,7 +11,7 @@ function sequence(inputPath, outputPath, cb) {
         ]);
 
     child.stdout.on('data', function (data) {
-      //console.log('stdout: ' + data);
+      console.log(data.toString());
     });
 
     child.on('close', function (code) {

@@ -10,7 +10,7 @@ program
 
 // There must be at least an input file
 if(process.argv.length<3){
-    console.log('No input file provided')
+    console.log('Error: No input file provided')
     process.exit(1);
 }
 
@@ -22,11 +22,9 @@ if(process.argv[3]){
     outputSVGFilePath = inputFilePath + ".svg";
 }
 
-var inputContent = fs.readFileSync(inputFilePath, 'utf8');
-try {
-    var outputContent = dot(inputContent);
-    fs.writeFileSync(outputSVGFilePath, outputContent);
-} catch(error){
-    console.log(error);
-    process.exit(1);
-}
+dot(inputFilePath, outputSVGFilePath, function(err){
+    if(err){
+        console.error(err);
+        process.exit(1);
+    }
+});

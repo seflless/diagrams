@@ -5,13 +5,13 @@ var program = require('commander'),
     outputSVGFilePath,
     flowchart = require('../src/flowchart/flowchart'),
     fs = require('fs');
-    
+
 program
     .parse(process.argv);
 
 // There must be at least an input file
 if(process.argv.length<3){
-    console.log('No input file provided')
+    console.log('Error: No input file provided')
     process.exit(1);
 }
 
