@@ -15,8 +15,8 @@ if( buildPlusManyParameters || noBuildTooManyParameters){
 
 // Validate the directory if it was provided, otherwise default to current directory
 var watchDirectory = ".";
-if( (program.build && process.argv.length === 4) ||
-	process.argv.length === 3 ) {
+if( (program.build && process.argv.length === 5) ||
+	process.argv.length === 4 ) {
 	watchDirectory = process.argv[2];
 
 	try {
