@@ -18,8 +18,17 @@
               // Generate SVG version of the flowchart
               var flowchart = require('../vendors/flowchart.js');
 
+              // Load and parse flowchart options
+              var chartOptions;
+              try {
+                var optionsContent = fs.readFileSync(options.optionsPath, 'utf8');
+                chartOptions = JSON.parse(optionsContent);
+              } catch (exception) {
+                chartOptions = {};
+              }
+
               var chart = flowchart.parse(inputContent);
-              chart.drawSVG('diagram');
+              chart.drawSVG('diagram', chartOptions);
 
               // Write out the svg file
               fs.writeFileSync(options.outputPath, document.getElementById('diagram').innerHTML);

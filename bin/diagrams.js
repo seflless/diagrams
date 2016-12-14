@@ -5,7 +5,7 @@ var program = require('commander'),
 
 program
   .version(version)
-  .command('flowchart [inputFilePath] [outputFilePath.svg]', 'Generate a flowchart in svg')
+  .command('flowchart [inputFilePath] [outputFilePath.svg] [options.json]', 'Generate a flowchart in svg')
   .command('sequence [inputFilePath] [outputFilePath.svg]', 'Generate a network sequence diagram in svg')
   .command('dot [inputFilePath] [outputFilePath.svg]', 'Generate a dot in svg')
   .command('railroad [inputFilePath] [outputFilePath.svg]', 'Generate a railroad diagram in svg')

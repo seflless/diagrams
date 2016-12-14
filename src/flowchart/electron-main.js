@@ -39,7 +39,8 @@ app.on('ready', function() {
      // Tell the BrowserWindow to generate our SVG for us
      mainWindow.webContents.send('flowchart-render-start', {
          inputPath: process.argv[2],
-         outputPath: process.argv[3]
+         outputPath: process.argv[3],
+         optionsPath: process.argv[4]
      });
 
      // Listen for when the browserwindow has finished or failed
