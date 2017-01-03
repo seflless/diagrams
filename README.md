@@ -170,7 +170,7 @@ Diagram(
   </pre>
   </td>
   <td>
-    <img src="http://francoislaberge.github.io/diagrams/docs/railroad.png"  width="500px" />
+    <img src="http://francoislaberge.github.io/diagrams/railroad.png"  width="500px" />
   </td>
 </tr>
 </table>
