@@ -7,7 +7,7 @@ See below for documentation/examples of the syntax/output for each of the curren
   - [graphviz's dot](#dot)
   - [railroad diagrams](#railroad)
 
-<img src="http://francoislaberge.com/diagrams/flowchart.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/sequence.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/dot.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/railroad.png" width="25%"/>
+<img src="http://francoislaberge.com/diagrams/flowchart.png" width="20%"/><img src="http://francoislaberge.github.io/diagrams/sequence.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/dot.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/railroad.png" width="25%"/>
 
 # Installation
 
@@ -66,7 +66,7 @@ cond(no)->sub1(right)->op1
   </pre>
   </td>
   <td>
-    <img src="http://francoislaberge.github.io/diagrams/flowchart.png" width="600px" />
+    <img src="http://francoislaberge.github.io/diagrams/flowchart.png" width="300px" />
   </td>
 </tr>
 </table>
