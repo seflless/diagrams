@@ -8,7 +8,7 @@ Also see [Atom Diagrams Plugin](https://atom.io/packages/diagrams) that integrat
   - [Usage](#usage)
    - [watch](#watch)
    - [build](#build)
-  - Supported diagrams
+  - [Diagrams](#diagrams)
     - [flowchart](#flowchart)
     - [network sequence](#sequence)
     - [graphviz's dot](#dot)
@@ -42,7 +42,9 @@ To provide the target directory to watch just pass it as an argument right after
 diagrams watch somedirectory --build
 ```
 
-## flowchart
+### Diagrams
+
+#### flowchart
 Documentation: [Flowchart.js ](http://flowchart.js.org/).
 
 To generate flowcharts, run:
@@ -79,7 +81,7 @@ cond(no)->sub1(right)->op1
 </table>
 
 
-## sequence
+#### sequence
 Documentation: [Network Sequence Diagram Syntax ](https://bramp.github.io/js-sequence-diagrams/).
 
 To generate Network Sequence Diagrams, run:
@@ -107,7 +109,7 @@ Bob-->Alice: I am good thanks!
 </tr>
 </table>
 
-## dot
+#### dot
 Documentation on the dot file format:
   - Read [dotguide.pdf](http://www.graphviz.org/pdf/dotguide.pdf).
   - See the [online generator](http://mdaines.github.io/viz.js/).
@@ -144,7 +146,7 @@ digraph G {
 </tr>
 </table>
 
-## railroad
+#### railroad
 Documentation see [railroad-diagrams](http://npmjs.org/railroad-diagrams)'s documentation':
   - **NOTE:** There is no real documentation for the input file syntax (PRs welcome), but the examples
       should help you figure it out a bit
