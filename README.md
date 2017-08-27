@@ -3,11 +3,16 @@ Command line tool for generating a suite of various types of diagrams, each base
 
 Also see [Atom Diagrams Plugin](https://atom.io/packages/diagrams) that integrates this into the [Atom IDE](https://atom.io/)
 
-See below for documentation/examples of the syntax/output for each of the currently supported diagrams type:
-  - [flowchart](#flowchart)
-  - [network sequence](#sequence)
-  - [graphviz's dot](#dot)
-  - [railroad diagrams](#railroad)
+### Documentation
+  - [Installation](#installation)
+  - [Usage](#usage)
+   - [watch](#watch)
+   - [build](#build)
+  - Supported diagrams
+    - [flowchart](#flowchart)
+    - [network sequence](#sequence)
+    - [graphviz's dot](#dot)
+    - [railroad diagrams](#railroad)
 
 <img src="http://francoislaberge.com/diagrams/flowchart.png" width="20%"/><img src="http://francoislaberge.github.io/diagrams/sequence.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/dot.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/railroad.png" width="25%"/>
 
