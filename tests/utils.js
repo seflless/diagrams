@@ -4,9 +4,12 @@ let tmpDir;
 module.exports = {
     init(cb){
         tmpDir = 'tests/tmp';
-        fs.emptyDir(tmpDir, cb);
+        fs.emptyDir(tmpDir, (err) => {
+            console.log('utils.init completed');
+            cb(err);
+        });
     },
-    
+
     getTmpDir(){
         return tmpDir;
     }

@@ -3,8 +3,12 @@ let exec = require('child_process').exec;
 let fs = require('fs-extra');
 let utils = require('./utils');
 
-describe('diagrams sequence', () => {
-    it('should create .svg from sequence files', (cb) => {
+describe('diagrams sequence', function(){
+    this.timeout(20*1000);
+    it('should create .svg from sequence files', function(cb) {
+        this.timeout(20*1000);
+        console.log('diagrams sequence started');
+
         let generatedSVGPath = `${utils.getTmpDir()}/simple.svg`;
         exec(`./bin/diagrams.js sequence tests/fixtures/sequence/simple.sequence ${generatedSVGPath}`, (err) => {
             if(err){
