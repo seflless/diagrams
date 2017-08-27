@@ -188,6 +188,14 @@ cd arbitrary
 npm test
 ```
 
+### Publishing to NPM
+Do the usual npm version bump then publish.
+```
+npm version <major|minor|patch>
+git push; git push --tags
+npm publish
+```
+
 All tests are run automatically on push via our [travis-ci integration](https://travis-ci.org/francoislaberge/diagrams).
 
 ## Credits
