@@ -5,15 +5,11 @@ let utils = require('./utils');
 
 describe('diagrams sequence', function(){
     it('should create .svg from sequence files', function(cb) {
-
         let generatedSVGPath = `${utils.getTmpDir()}/simple.svg`;
-        console.log(generatedSVGPath);
-        console.log(`Current directory: ${process.cwd()}`);
         exec(`./bin/diagrams.js sequence tests/fixtures/sequence/simple.sequence ${generatedSVGPath}`, (err) => {
             if(err){
                 return cb(err);
             }
-            console.log(`Current directory: ${process.cwd()}`);
 
             fs.readFile(generatedSVGPath, (err, fileContent) => {
                 if(err){
