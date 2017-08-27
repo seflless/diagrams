@@ -1,8 +1,9 @@
 let utils = require('./utils');
 
 
-before( (cb) => {
-    utils.init(cb);
+before( () => {
+    utils.init(() => {
+        require('./sequence');
+    });
 })
 
-require('./sequence');
