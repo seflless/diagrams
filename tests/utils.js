@@ -5,9 +5,7 @@ let tmpDir;
 module.exports = {
     init(cb){
         tmpDir = path.resolve(__dirname, '../tests/tmp');
-        fs.emptyDir(tmpDir, (err) => {
-            cb(err);
-        });
+        setTimeout(cb, 0);
     },
 
     getTmpDir(){
