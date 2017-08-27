@@ -7,7 +7,7 @@
     "diagrams": "./bin/diagrams.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/index.js"
   },
   "dependencies": {
     "commander": "2.8.1",
@@ -36,5 +36,9 @@
     "visualization",
     "system",
     "design"
-  ]
+  ],
+  "devDependencies": {
+    "fs-extra": "^4.0.1",
+    "mocha": "^3.5.0"
+  }
 }

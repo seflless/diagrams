@@ -1,6 +1,8 @@
 # TODO
 Just railroad diagrams are supported currently. More coming soon. The goal is to have a consistent look for all of the diagrams and make a good suite of diagramming tool for improved documentation.
 
+ - Improve contributor experience
+  - Make mocha test run debuggable
  - Add support for backgrounds for edge labels so they can be styled better. Without a background box to work with it's hard to make them readable on top of edges and such. See:
    - http://stackoverflow.com/a/16873128
  - Bin packing?
