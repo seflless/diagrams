@@ -20,14 +20,14 @@ npm install -g diagrams
 ## watch
 The diagrams CLI provides the `watch` command that will automatically generate the .svg visualization of each diagram file format it supports. Run the following:
 
-Watches the current directory and generates an .svg file in the same directory as any found file.
+Generates all of the .svg files, then starts watching the current directory and regenerates any diagram file that changes.
 ```
 diagrams watch
 ```
 
-Same as above but also first generates all .svg files before starting watch process
+Generates all .svg files, but don't start watching after.
 ```
-diagrams watch --build
+diagrams build
 ```
 
 To provide the target directory to watch just pass it as an argument right after the `watch` command.
