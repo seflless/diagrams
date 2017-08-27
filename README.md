@@ -190,8 +190,6 @@ npm test
 
 All tests are run automatically on push via our [travis-ci integration](https://travis-ci.org/francoislaberge/diagrams).
 
-npm run test
-
 ## Credits
 
   - [flowchart.js](http://flowchart.js.org/) for the flowchart diagrams
