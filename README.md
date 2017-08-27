@@ -1,6 +1,8 @@
 # Overview
 Command line tool for generating a suite of various types of diagrams, each based on intuitive text DSLs.
 
+Also see [Atom Diagrams Plugin](https://atom.io/packages/diagrams) that integrates this into the [Atom IDE](https://atom.io/)
+
 See below for documentation/examples of the syntax/output for each of the currently supported diagrams type:
   - [flowchart](#flowchart)
   - [network sequence](#sequence)
