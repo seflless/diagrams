@@ -74,7 +74,7 @@ Just railroad diagrams are supported currently. More coming soon. The goal is to
   - Expose and document non cli way of generating the diagrams
   - Consider standardizing the input text formats for all diagram types(debatable as custom syntaxes are nice, albeit messier to manipulate/generate procedurally)
   - similar projects
-    - https://github.com/knsv/mermaid
+    - https://github.com/knsv/mermaid (VERY GOOD, and it's been around for quite a while)
   - Consider adding file extensions for each that match their sub command
     - ```diagrams railroad``` -> ```file.railroad```
     - ```diagrams sequence``` -> ```file.sequence```
