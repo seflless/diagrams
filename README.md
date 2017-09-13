@@ -6,8 +6,8 @@ Also see [Atom Diagrams Plugin](https://atom.io/packages/diagrams) that integrat
 ### Documentation
   - [Installation](#installation)
   - [Usage](#usage)
-   - [watch](#watch)
-   - [build](#build)
+    - [watch](#watch)
+    - [build](#build)
   - [Diagrams](#diagrams)
     - [flowchart](#flowchart)
     - [network sequence](#sequence)
