@@ -23,8 +23,11 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({
       width: 1000,
       height: 1000,
-      show: true
+      show: true,
+      minimizable: true
   });
+
+  mainWindow.minimize();
 
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/index.html');

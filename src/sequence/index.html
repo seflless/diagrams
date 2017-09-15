@@ -27,7 +27,7 @@
                 ipcRenderer.send('sequence-error', err.message);
           }
 
-          //ipcRenderer.send('sequence-render-finished');
+          ipcRenderer.send('sequence-render-finished');
       });
     </script>
 </body>
