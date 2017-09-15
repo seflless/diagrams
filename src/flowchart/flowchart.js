@@ -1,4 +1,4 @@
-var electron = require('electron-prebuilt'),
+var electron = require('electron'),
     proc = require('child_process'),
     path = require('path');
 

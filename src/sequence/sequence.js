@@ -1,4 +1,4 @@
-var electron = require('electron-prebuilt'),
+var electron = require('electron'),
     proc = require('child_process'),
     path = require('path');
 
@@ -11,7 +11,7 @@ function sequence(inputPath, outputPath, cb) {
         ]);
 
     child.stdout.on('data', function (data) {
-      console.log(data.toString());
+        console.log(data.toString());
     });
 
     child.on('close', function (code) {

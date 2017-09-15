@@ -1,6 +1,4 @@
-const electron = require('electron');
-const app = electron.app;  // Module to control application life.
-const BrowserWindow = electron.BrowserWindow;  // Module to create native browser window.
+const {app,BrowserWindow} = require('electron');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -23,11 +21,8 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({
       width: 1000,
       height: 1000,
-      show: true,
-      minimizable: true
+      show: false
   });
-
-  mainWindow.minimize();
 
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/index.html');

@@ -5,6 +5,7 @@ let tmpDir;
 module.exports = {
     init(cb){
         tmpDir = path.resolve(__dirname, '../tests/tmp');
+        fs.ensureDirSync(tmpDir);
         setTimeout(cb, 0);
     },
 
