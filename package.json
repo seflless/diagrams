@@ -1,6 +1,6 @@
 {
   "name": "diagrams",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "Generate Flowcharts, Network Sequence, Dot, and Railroad Diagrams",
   "main": "src/diagrams.js",
   "bin": {
