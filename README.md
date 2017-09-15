@@ -1,3 +1,4 @@
+<a href="https://travis-ci.org/francoislaberge/diagrams"><img src="https://api.travis-ci.org/francoislaberge/diagrams.svg" alt="Build Status"></a>
 # Overview
 Command line tool for generating a suite of various types of diagrams, each based on intuitive text DSLs.
 
