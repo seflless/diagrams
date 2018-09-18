@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Flowchart - Diagrams</title>
         <script src="../vendors/raphael-min.js"></script>
+        <script src="../vendors/flowchart.js"></script>;
     </head>
     <body>
         <div id="diagram"></div>
@@ -12,17 +13,19 @@
               fs = require('fs');
 
           ipcRenderer.on('flowchart-render-start', function(event, options) {
+            // Load input contents
+            try{
               // Load input contents
               var inputContent = fs.readFileSync(options.inputPath, 'utf8');
-
-              // Generate SVG version of the flowchart
-              var flowchart = require('../vendors/flowchart.js');
 
               var chart = flowchart.parse(inputContent);
               chart.drawSVG('diagram');
 
               // Write out the svg file
               fs.writeFileSync(options.outputPath, document.getElementById('diagram').innerHTML);
+            } catch(err){
+                  ipcRenderer.send('flowchart-error', err.message);
+            }
 
               ipcRenderer.send('flowchart-render-finished');
           });
