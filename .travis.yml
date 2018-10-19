@@ -2,5 +2,15 @@ language: node_js
 node_js:
   - "6.5.0"
 
-before_script:     
+before_script:
   - npm test
+
+
+addons:
+    apt:
+      packages:
+        - xvfb
+
+  install:
+    - export DISPLAY=':99.0'
+    - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
