@@ -189,8 +189,8 @@ Diagram(
 
 ### Setup
 ```
-git clone git@github.com:francoislaberge/arbitrary.git
-cd arbitrary
+git clone git@github.com:francoislaberge/diagrams.git
+cd diagrams
 ```
 
 ### Testing
