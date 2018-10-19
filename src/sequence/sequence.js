@@ -20,7 +20,7 @@ function sequence(inputPath, outputPath, cb) {
 
     child.on('close', function (code) {
         //console.log('child process exited with code ' + code);
-        cb();
+        cb(code);
     });
 
 };
