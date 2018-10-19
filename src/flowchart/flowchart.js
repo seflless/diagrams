@@ -11,11 +11,11 @@ function flowchart(inputPath, outputPath, cb) {
         ]);
 
     child.stdout.on('data', function (data) {
-      console.log('stdout: ' + data);
+      console.log('flowchart:stdout: ' + data.toString());
     });
 
     child.stderr.on('data', function (data) {
-      console.log('stdout: ' + data);
+      console.log('flowchart:stderr: ' + data.toString());
     });
 
     child.on('close', function (code) {
