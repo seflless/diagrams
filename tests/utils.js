@@ -6,6 +6,7 @@ let tmpDir;
 module.exports = {
     init(cb){
         tmpDir = path.resolve(os.tmpdir(), 'diagrams-test/');
+        console.log(tmpDir);
         fs.ensureDirSync(tmpDir);
         setTimeout(cb, 0);
     },

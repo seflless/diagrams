@@ -11,12 +11,16 @@ function flowchart(inputPath, outputPath, cb) {
         ]);
 
     child.stdout.on('data', function (data) {
-      //console.log('stdout: ' + data);
+      console.log('stdout: ' + data);
+    });
+
+    child.stderr.on('data', function (data) {
+      console.log('stdout: ' + data);
     });
 
     child.on('close', function (code) {
         //console.log('child process exited with code ' + code);
-        cb();
+        cb(code);
     });
 
 };
