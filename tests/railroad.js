@@ -7,7 +7,7 @@ let path = require('path');
 describe('diagrams railroad', function(){
     it('should create .svg from .railroad files', function(cb) {
         let generatedSVGPath = `${utils.getTmpDir()}/railroad.svg`;
-        let shouldBe = fs.readFileSync(path.resolve(`${utils.getTmpDir()}/../fixtures/railroad/simple.railroad.svg`)).toString();
+        let shouldBe = fs.readFileSync(path.resolve(__dirname, "fixtures/railroad/simple.railroad.svg")).toString();
         exec(`./bin/diagrams.js railroad tests/fixtures/railroad/simple.railroad ${generatedSVGPath}`, (err) => {
             if(err){
                 return cb(err);
