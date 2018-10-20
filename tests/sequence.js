@@ -4,7 +4,7 @@ let fs = require('fs-extra');
 let utils = require('./utils');
 
 describe('diagrams sequence', function(){
-    it('should create .svg from .sequence files', function(cb) {
+    it.skip('should create .svg from .sequence files', function(cb) {
         let generatedSVGPath = `${utils.getTmpDir()}/sequence.svg`;
         exec(`./bin/diagrams.js sequence tests/fixtures/sequence/simple.sequence ${generatedSVGPath}`, (err) => {
             if(err){
