@@ -11,12 +11,16 @@ function sequence(inputPath, outputPath, cb) {
         ]);
 
     child.stdout.on('data', function (data) {
-        console.log(data.toString());
+        console.log('sequence:stdout: ' + data.toString());
+    });
+
+    child.stdout.on('data', function (data) {
+        console.log('sequence:stderr: ' + data.toString());
     });
 
     child.on('close', function (code) {
         //console.log('child process exited with code ' + code);
-        cb();
+        cb(code);
     });
 
 };
