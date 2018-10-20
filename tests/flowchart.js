@@ -4,7 +4,7 @@ let fs = require('fs-extra');
 let utils = require('./utils');
 
 describe('diagrams flowchart', function(){
-    it('should create .svg from .flowchart files', function(cb) {
+    it.skip('should create .svg from .flowchart files', function(cb) {
         let generatedSVGPath = `${utils.getTmpDir()}/flowchart.svg`;
         exec(`./bin/diagrams.js flowchart tests/fixtures/flowchart/simple.flowchart ${generatedSVGPath}`, (err) => {
             if(err){
