@@ -76,7 +76,7 @@ cond(no)->sub1(right)->op1
   </pre>
   </td>
   <td>
-    <img src="http://francoislaberge.github.io/diagrams/flowchart.png" width="300px" />
+    <img src="http://seflless.github.io/diagrams/flowchart.png" width="300px" />
   </td>
 </tr>
 </table>
@@ -105,7 +105,7 @@ Bob-->Alice: I am good thanks!
   </pre>
   </td>
   <td>
-    <img src="http://francoislaberge.github.io/diagrams/sequence.png" width="350px" />
+    <img src="http://seflless.github.io/diagrams/sequence.png" width="350px" />
   </td>
 </tr>
 </table>
@@ -140,9 +140,9 @@ digraph G {
 }
 </code>
   </pre>
-  </td>
+  </td> 
   <td>
-    <img src="http://francoislaberge.github.io/diagrams/dot.png" width="300px" />
+    <img src="http://seflless.github.io/diagrams/dot.png" width="300px" />
   </td>
 </tr>
 </table>
@@ -180,7 +180,7 @@ Diagram(
   </pre>
   </td>
   <td>
-    <img src="http://francoislaberge.github.io/diagrams/railroad.png"  width="500px" />
+    <img src="http://seflless.github.io/diagrams/railroad.png"  width="500px" />
   </td>
 </tr>
 </table>
