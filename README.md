@@ -15,7 +15,7 @@ Also see [Atom Diagrams Plugin](https://atom.io/packages/diagrams) that integrat
     - [graphviz's dot](#dot)
     - [railroad diagrams](#railroad)
 
-<img src="http://francoislaberge.com/diagrams/flowchart.png" width="20%"/><img src="http://francoislaberge.github.io/diagrams/sequence.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/dot.png" width="25%"/><img src="http://francoislaberge.github.io/diagrams/railroad.png" width="25%"/>
+<img src="http://seflless.github.io/diagrams/flowchart.png" width="20%"/><img src="http://seflless.github.io/diagrams/sequence.png" width="25%"/><img src="http://seflless.github.io/diagrams/dot.png" width="25%"/><img src="http://seflless.github.io/diagrams/railroad.png" width="25%"/>
 
 # Installation
 
