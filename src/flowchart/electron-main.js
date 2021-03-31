@@ -39,6 +39,10 @@ app.on('ready', function() {
      });
 
      // Listen for when the browserwindow has finished or failed
+     ipcMain.on('flowchart-error', function(event, message){
+         console.log(message);
+         app.quit();
+     });
      ipcMain.on('flowchart-render-finished', function(){
          app.quit();
      });
